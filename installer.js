@@ -6,7 +6,7 @@
 /* eslint-disable no-console */
 
 let installPromptEvent;
-const installLink = document.querySelector(".install-link");
+const installink = document.querySelector(".install-link");
 
 // Install App functionality
 window.addEventListener("beforeinstallprompt", event => {
@@ -19,15 +19,12 @@ window.addEventListener("beforeinstallprompt", event => {
     installPromptEvent = event;
 
     // Show the (hidden-by-default) install link
-    installLink.hidden = false;
+    installink.hidden = false;
 });
 
-installLink.addEventListener("click", event => {
+installink.addEventListener("click", event => {
     console.log("Install App Link Click Event");
     event.preventDefault();
-
-    // Update the install UI to remove the install button
-    installLink.hidden = true;
 
     // Show the modal add to home screen dialog
     installPromptEvent.prompt();

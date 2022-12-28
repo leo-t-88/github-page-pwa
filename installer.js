@@ -17,11 +17,17 @@ window.addEventListener("beforeinstallprompt", event => {
 
     // Stash the event so it can be triggered later.
     installPromptEvent = event;
+
+    // Show the (hidden-by-default) install link
+    installLink.hidden = false;
 });
 
 installLink.addEventListener("click", event => {
     console.log("Install App Link Click Event");
     event.preventDefault();
+
+    // Update the install UI to remove the install button
+    installLink.hidden = true;
 
     // Show the modal add to home screen dialog
     installPromptEvent.prompt();

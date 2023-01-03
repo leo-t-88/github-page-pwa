@@ -2,16 +2,19 @@
   "name": "Github Page PWA",
   "short_name": "GPPWA",
   "description": "Github Page as a Progressive Web App",
+  "dir": "auto",
+  "orientation": "portrait",
   "scope": "/github-page-pwa/",
   "start_url": "/github-page-pwa/",
   "background_color": "#ffffff",
   "theme_color": "#ffffff",
-  "display": "standalone", 
+  "display": "standalone",
   "icons": [
-      {
-        "src": "/github-page-pwa/img/icon.png",
-        "type": "image/png",
-        "sizes": "700x700"
-      }
+    {
+      "src": "/github-page-pwa/img/icon.png",
+      "type": "image/png",
+      "sizes": "700x700",
+      "purpose": "any"
+    }
   ]
 }

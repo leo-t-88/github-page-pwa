@@ -1,6 +1,6 @@
 var GHPATH = '/github-page-pwa';
 var APP_PREFIX = 'gppwa_';
-var VERSION = 'version_002';
+var VERSION = 'version_100';
 
 var CACHE_NAME = APP_PREFIX + VERSION
 self.addEventListener('fetch', function (e) {

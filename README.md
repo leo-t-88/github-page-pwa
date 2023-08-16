@@ -1,4 +1,4 @@
-# Github page as a PWA template
+# Github page as a [PWA template](https://leo-t-88.github.io/github-page-pwa)
 
 This is a bare-bones example on how to turn an `index.html` document on GitHub and hosted as a GitHub Page into an installable Progressive Web App with offline caching.
 

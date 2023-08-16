@@ -1,10 +1,10 @@
 :root {
-  --bg-color: url(../img/icon.png) 95% 95% no-repeat);
+  --bg-color: #fff;
   --txt-color: #333;
 }
 
 [data-theme="dark"] {
-  --bg-color: linear-gradient(rgba(50, 50, 50, 0.2), rgba(50, 50, 50, 0.2)),url(../img/icon.png) 95% 95% no-repeat;
+  --bg-color: #111;
   --txt-color: #fff;
 }
 body {
@@ -13,7 +13,7 @@ body {
     margin: 0;
     padding: 2em;
     height: 90vh;
-    background-image: var(--bg-color);
+    background-color: var(--bg-color);
     background-size: 20vh;
 }
 h1 {

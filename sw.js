@@ -1,6 +1,12 @@
 var GHPATH = '/github-page-pwa';
 var APP_PREFIX = 'gppwa_';
-var VERSION = 'version_102';
+var VERSION = 'version_001';
+var URLS = [    
+  `${GHPATH}/`,
+  `${GHPATH}/index.html`,
+  `${GHPATH}/css/styles.css`,
+  `${GHPATH}/img/icon.png`
+]
 
 var CACHE_NAME = APP_PREFIX + VERSION
 self.addEventListener('fetch', function (e) {
@@ -22,6 +28,7 @@ self.addEventListener('install', function (e) {
   e.waitUntil(
     caches.open(CACHE_NAME).then(function (cache) {
       console.log('Installing cache : ' + CACHE_NAME);
+      return cache.addAll(URLS)
     })
   )
 })
